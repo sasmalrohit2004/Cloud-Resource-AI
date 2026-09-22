@@ -1,0 +1,25 @@
+{
+  "evaluation_timestamp": "2026-09-22T13:08:38.560347",
+  "test_dataset_size": 1100,
+  "prediction_horizon": "15 minutes (~3 intervals of 5 min)",
+  "cpu_model": {
+    "model_type": "RandomForestRegressor",
+    "target": "target_cpu",
+    "mae": 4.664,
+    "rmse": 6.702,
+    "r2": 0.7396
+  },
+  "ram_model": {
+    "model_type": "RandomForestRegressor",
+    "target": "target_ram",
+    "mae": 1.51,
+    "rmse": 2.916,
+    "r2": 0.9424
+  },
+  "anomaly_model": {
+    "model_type": "IsolationForest",
+    "test_anomalies_detected": 60,
+    "test_normal_records": 1040,
+    "anomaly_percentage": 5.45
+  }
+}

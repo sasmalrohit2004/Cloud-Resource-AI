@@ -1,0 +1,26 @@
+# Dependencies & Builds
+node_modules/
+build/
+dist/
+coverage/
+
+# Python Virtual Environments & Cache
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# OS and Editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Environment Variables & Logs
+*.log
+.env*
+!.env.example
+

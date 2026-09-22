@@ -1,0 +1,6 @@
+{
+  "name": "Cloud Resource AI",
+  "description": "ML-Based Cloud Resource Utilization Prediction & Optimization System for predicting future CPU and RAM utilization with anomaly detection and resource optimization recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,38 @@
+{
+  "features": [
+    "cpu_usage",
+    "ram_usage",
+    "disk_usage",
+    "network_usage",
+    "active_users",
+    "request_rate",
+    "hour",
+    "day_of_week",
+    "previous_cpu",
+    "previous_ram",
+    "previous_disk",
+    "previous_network",
+    "previous_request_rate",
+    "previous_active_users",
+    "rolling_cpu_mean",
+    "rolling_ram_mean",
+    "rolling_request_rate"
+  ],
+  "anomaly_features": [
+    "cpu_usage",
+    "ram_usage",
+    "disk_usage",
+    "network_usage",
+    "request_rate"
+  ],
+  "target_cpu": "target_cpu",
+  "target_ram": "target_ram",
+  "prediction_horizon_steps": 3,
+  "prediction_horizon_minutes": 15,
+  "sample_interval_minutes": 5,
+  "train_samples": 4396,
+  "test_samples": 1100,
+  "cpu_model_type": "RandomForestRegressor",
+  "ram_model_type": "RandomForestRegressor",
+  "anomaly_model_type": "IsolationForest"
+}
