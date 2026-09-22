@@ -10,7 +10,7 @@
 
 ---
 
-## 📖 In Plain English: What is this project?
+## 📖  What is this project?
 
 In cloud platforms like AWS, Google Cloud, or Azure, servers frequently encounter sudden surges in traffic. 
 
@@ -238,7 +238,6 @@ cloud-resource-ai/
 ├── vite.config.ts                  # Vite build & reverse proxy configuration
 ├── metadata.json                   # Project metadata
 └── README.md                       # Documentation
-```
 
 ---
 
@@ -249,62 +248,6 @@ Run the backend and ML test suite with Pytest:
 pytest backend/tests/ ml/tests/ -v
 ```
 All unit tests will execute and verify API responses, Pydantic schemas, and model inference.
-
----
-
-## 🎓 College Viva / Project Presentation Script
-
-If presenting this project for an evaluation or interview, follow this concise flow:
-
-1. **The Problem Statement (1 min)**: Traditional cloud alerting is reactive. When CPU exceeds 90%, users already experience lag.
-2. **The Innovation (1 min)**: Cloud Resource AI shifts the paradigm from *reactive* to *proactive* by forecasting demand ~15 minutes ahead.
-3. **The Live Dashboard (1 min)**: Show the clean layout, live telemetry charts, and model performance metrics (CPU MAE: 4.66%, RAM $R^2$: 0.94).
-4. **Live Simulation (1.5 min)**:
-   - Click **"High Traffic"** &rarr; Show the forecast crossing 80% and the recommendation to scale up.
-   - Click **"Low Utilization"** &rarr; Show how the engine advises downsizing to cut cloud bills.
-   - Click **"Anomaly Spike"** &rarr; Highlight how Isolation Forest flags a runaway thread with low user count.
-5. **Architectural Safety (30 sec)**: Clarify that this is a *decision-support system*—it delivers intelligent advisories while leaving final execution under human operator control.
-
----
-
-## 📤 How to Push to Git
-
-Ready to push your changes to GitHub or GitLab? Use these clean steps:
-
-```bash
-# 1. Initialize git (if not already done)
-git init
-
-# 2. Add all project files
-git add .
-
-# 3. Create your commit
-git commit -m "feat: complete Cloud Resource AI with ML forecasting, anomaly detection, and operator gateway"
-
-# 4. Set the main branch
-git branch -M main
-
-# 5. Add your remote repository (replace with your URL)
-git remote add origin https://github.com/YOUR_USERNAME/cloud-resource-ai.git
-
-# 6. Push to remote
-git push -u origin main
-```
-
----
-
-## ❓ Frequently Asked Questions (FAQ)
-
-**Q: Do I need a live AWS or GCP cloud account with billing?**  
-*No. The system uses a realistic, mathematically modeled synthetic cloud dataset that reproduces real-world web traffic cycles, weekday spikes, and resource interactions.*
-
-**Q: Do I need MongoDB installed on my computer?**  
-*No. If MongoDB isn't running, the backend automatically activates a thread-safe in-memory database so you can test immediately.*
-
-**Q: Why predict 15 minutes into the future?**  
-*In real cloud environments (like AWS Auto Scaling groups or Kubernetes HPA), provisioning a new virtual machine or warm pod container takes 3 to 7 minutes. A 15-minute prediction horizon provides ample lead time to scale before user traffic causes degradation.*
-
----
 
 ## 📄 License
 This project is open-source and released under the [MIT License](LICENSE).
